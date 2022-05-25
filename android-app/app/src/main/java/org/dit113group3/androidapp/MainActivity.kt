@@ -11,8 +11,8 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.joystickjhr.JoystickJhr
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.dialog_view.view.*
+//import kotlinx.android.synthetic.main.activity_main.*
+//import kotlinx.android.synthetic.main.dialog_view.view.*
 import org.eclipse.paho.client.mqttv3.IMqttActionListener
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken
 import org.eclipse.paho.client.mqttv3.IMqttToken
@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
         mCameraView = findViewById(R.id.imageView)
         healthBar = findViewById(R.id.health)
         gameOverMessage = findViewById(R.id.gameOver)
-
+/*
         exit.setOnClickListener {
             val view = View.inflate(this, R.layout.dialog_view, null)
 
@@ -85,6 +85,8 @@ class MainActivity : AppCompatActivity() {
                 exitProcess(0)
             }
         }
+
+ */
 
         shootCooldown = findViewById(R.id.coolDown)
         val shoot = findViewById<Button>(R.id.shoot)
