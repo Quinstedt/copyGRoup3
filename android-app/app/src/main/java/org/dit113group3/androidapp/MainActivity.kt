@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
     private var shootCooldown: ImageView? = null
     private var gameOverMessage: TextView? = null
 
-
     companion object {
         private var hp = MAX_HEALTH
         private var TOKEN = ""
