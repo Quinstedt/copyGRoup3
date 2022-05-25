@@ -28,13 +28,19 @@ class CreditsActivityTest {
         val activityScenario = ActivityScenario.launch(CreditsActivity::class.java)
         onView(withId(R.id.devTitle)).check(matches(isDisplayed()))
         onView(withId(R.id.devBody)).check(matches(isDisplayed()))
+        onView(withId(R.id.importantlyText)).check(matches(isDisplayed()))
+        onView(withId(R.id.youText)).check(matches(isDisplayed()))
+        onView(withId(R.id.playingText)).check(matches(isDisplayed()))
+        delay
+    }
+    @LargeTest   //Checks if Credits Activity elements are present
+    fun test_visibility_titles_on_creditsScreen2() {
+        val activityScenario = ActivityScenario.launch(CreditsActivity::class.java)
+
         onView(withId(R.id.teacherTitle)).check(matches(isDisplayed()))
         onView(withId(R.id.teacherBody)).check(matches(isDisplayed()))
         onView(withId(R.id.taTitle)).check(matches(isDisplayed()))
         onView(withId(R.id.taBody)).check(matches(isDisplayed()))
-        onView(withId(R.id.importantlyText)).check(matches(isDisplayed()))
-        onView(withId(R.id.youText)).check(matches(isDisplayed()))
-        onView(withId(R.id.playingText)).check(matches(isDisplayed()))
         delay
     }
 
